@@ -1,0 +1,1 @@
+-- Retorne o Nome, Sobrenome, Email e Quanto gastou para todos clientes de um gênero X - ordenado por gasto
