@@ -1,4 +1,4 @@
-# Chinnok Music-Store Data
+# Chinook Music-Store Data
 
 This repository was created to implement a Dimensional Modeling based at the Chinook DataBase found on [Kaggle](https://www.kaggle.com/code/abdelazizelsawy/chinook-music-store-data/data?select=chinook.db), where was extracted an sqlite [chinook.db](/chinook.db) file and then generated a [ddl statement](/chinook/ddl/chinook.sql) to create the data into a Postgres DB.
 
