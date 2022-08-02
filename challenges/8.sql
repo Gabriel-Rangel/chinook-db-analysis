@@ -1,1 +1,0 @@
--- Qual a música mais longa, quantidade vendida e valor por gênero

@@ -31,7 +31,7 @@ $$ LANGUAGE plpgsql;
 
 -- segunda query traz o gênero mais vendido por estado.
 CREATE FUNCTION indicate_genre_per_state(genero VARCHAR)
-RETURNS TABLE ('state' VARCHAR , genre VARCHAR) 
+RETURNS TABLE (state VARCHAR , genre VARCHAR) 
 AS $$
 BEGIN
 	RETURN QUERY
@@ -53,7 +53,7 @@ BEGIN
         INNER JOIN genre ge ON tr.genre_id = ge.genre_id
         WHERE ge.name = genero
         AND cu.state IS NOT NULL
-        GROUP by ge.name, cu.country
+        GROUP by ge.name, cu.state
         ) base
     WHERE ranking = 1;
 END;
