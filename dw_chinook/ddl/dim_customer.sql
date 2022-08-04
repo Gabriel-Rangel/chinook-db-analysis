@@ -1,4 +1,4 @@
-CREATE TABLE dim_customer AS
+CREATE TABLE dw_chinook.dim_customer AS
 SELECT  customer_id
        ,first_name
        ,last_name
