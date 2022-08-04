@@ -1,4 +1,4 @@
-CREATE TABLE dim_track AS
+CREATE TABLE dw_chinook.dim_track AS
 SELECT  track.track_id
        ,track.name      AS track
        ,media_type.name AS media_type
