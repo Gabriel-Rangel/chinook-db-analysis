@@ -1,4 +1,4 @@
-CREATE TABLE dim_employee AS
+CREATE TABLE dw_chinook.dim_employee AS
 SELECT  employee_id
        ,first_name
        ,last_name
