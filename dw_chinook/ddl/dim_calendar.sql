@@ -1,4 +1,4 @@
-CREATE TABLE dim_calendar AS
+CREATE TABLE dw_chinook.dim_calendar AS
 SELECT   d                     AS "date"
        , extract(day FROM d)   AS "day" 
        , extract(month FROM d) AS "month" 
