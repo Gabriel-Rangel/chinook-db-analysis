@@ -1,4 +1,4 @@
-CREATE TABLE fact_transaction AS
+CREATE TABLE dw_chinook.fact_transaction AS
 SELECT  invoice_line.invoice_line_id
        ,invoice_line.invoice_id
        ,track_id
