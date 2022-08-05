@@ -10,10 +10,10 @@ SELECT  employee_id
        ,hire_date
        ,address
        ,city
-       ,'state'
+       ,e.state AS state
        ,country
        ,postal_code
        ,phone
        ,fax
        ,email
-FROM chinook.employee;
+FROM chinook.employee e;

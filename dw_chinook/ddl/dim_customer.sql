@@ -7,10 +7,10 @@ SELECT  customer_id
        ,company
        ,address
        ,city
-       ,'state'
+       ,c.state AS state
        ,country
        ,postal_code
        ,phone
        ,fax
        ,email
-FROM chinook.customer;
+FROM chinook.customer c;
