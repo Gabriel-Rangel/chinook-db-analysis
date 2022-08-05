@@ -1,4 +1,5 @@
 -- dw_chinook is the collection of fact and dimensions tables where the datawarehouse is logical organized.
+
 CREATE TABLE dw_chinook.dim_calendar AS
 SELECT   d                     AS "date"
        , extract(day FROM d)   AS "day" 
