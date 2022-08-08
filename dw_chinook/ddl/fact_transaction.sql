@@ -15,9 +15,9 @@ SELECT  invoice_line.invoice_line_id
        ,CAST(invoice.invoice_date AS DATE)              AS "date"
        ,invoice.billing_address
        ,invoice.billing_city
-       ,invoice.billing_state
+       ,CASE WHEN invoice.billing_state = 'None' THEN NULL ELSE invoice.billing_state END
        ,invoice.billing_country
-       ,invoice.billing_postal_code
+       ,CASE WHEN invoice.billing_postal_code = 'None' THEN NULL ELSE invoice.billing_postal_code END
 FROM chinook.invoice
 INNER JOIN chinook.invoice_line
 ON chinook.invoice.invoice_id = chinook.invoice_line.invoice_id
