@@ -2,7 +2,8 @@
 -- chinook is the collection of tables that contains the original transactional database.
 
 CREATE TABLE dw_chinook.dim_track AS
-SELECT  track.track_id
+SELECT  DISTINCT
+	track.track_id
        ,track.name      AS track -- name of track
        ,media_type.name AS media_type -- name of media type
        ,genre.name      AS genre -- name of genre
